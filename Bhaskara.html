@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bhaskara</h1>
+    <label for="inputA">A</label>
+    <input type="number" name="inputA" id="inputA">
+    <br>
+    <label for="inputB">B</label>
+    <input type="number" name="inputB" id="inputB">
+    <br>
+    <label for="inputC">C</label>
+    <input type="number" name="inputC" id="inputC"><br>
+    <br>
+    <input type="button" value="calcular" onclick="Calcular()"><br>
+    <span id="saida">X= </span>
+    
+    <script>
+        function Calcular() {
+            debugger
+            let A = parseInt(document.getElementById("inputA").value);
+            let B = parseInt(document.getElementById("inputB").value);
+            let C = parseInt(document.getElementById("inputC").value);
+
+            let delta= B**2-4*A*C;
+           if (delta>=0) {
+            
+            let X1= -B-Math.sqrt(delta);
+            let X2= -B+Math.sqrt(delta);
+            
+            document.getElementById("saida").innerHTML= "X= "+X1+", "+X2;
+            }else{
+                alert("Não possui raízes reais")
+            }
+            
+        }
+    </script>
+    
+</body>
+</html>
