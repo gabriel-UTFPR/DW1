@@ -29,14 +29,14 @@
             let delta= B**2-4*A*C;
            if (delta>=0) {
             
-            let X1= -B-Math.sqrt(delta);
-            let X2= -B+Math.sqrt(delta);
+            let X1= -B-Math.sqrt(delta)/(A*2);
+            let X2= -B+Math.sqrt(delta)/(A*2);
             
             document.getElementById("saida").innerHTML= "X= "+X1+", "+X2;
             }else{
                 alert("Não possui raízes reais")
             }
-            
+            //serto
         }
     </script>
     
