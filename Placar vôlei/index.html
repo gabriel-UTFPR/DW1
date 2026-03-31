@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Placar de Vôlei</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="placar">
+    <h1>Placar de Vôlei</h1>
+
+    <div class="sets">
+      <div>
+        <p>Sets A</p>
+        <div class="valor" id="setsA">0</div>
+      </div>
+      <div>
+        <p>Sets B</p>
+        <div class="valor" id="setsB">0</div>
+      </div>
+    </div>
+
+    <div class="times">
+      <div class="time">
+        <p>Time A</p>
+        <div class="gols" id="pontosA">0</div>
+        <button class="add" onclick="alterarPontos('A', 1)">+ Ponto</button>
+      </div>
+
+      <div class="time">
+        <p>Time B</p>
+        <div class="gols" id="pontosB">0</div>
+        <button class="add" onclick="alterarPontos('B', 1)">+ Ponto</button>
+      </div>
+    </div>
+
+    <button class="reset" onclick="resetar()">Resetar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

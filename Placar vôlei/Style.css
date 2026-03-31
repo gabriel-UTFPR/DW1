@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #002b5b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.placar {
+  background: #111;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.time {
+  font-size: 20px;
+}
+
+.gols {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.sets {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.valor {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add {
+  background: #28a745;
+  color: white;
+}
+
+.reset {
+  background: #ffc107;
+  color: black;
+  margin-top: 20px;
+}

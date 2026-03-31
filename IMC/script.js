@@ -1,4 +1,5 @@
 function funcaoCalcular() {
+    debugger
     let Peso = parseFloat(document.getElementById("inputPeso").value);
     let Altura = parseFloat(document.getElementById("inputAltura").value);
     

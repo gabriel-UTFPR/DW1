@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Placar de Futebol</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="placar">
+    <h1>Placar de Futebol</h1>
+
+    <!-- Cronômetro -->
+    <div class="cronometro" id="tempo">00:00</div>
+    <div class="controles-tempo">
+      <button onclick="iniciarTempo()">▶</button>
+      <button onclick="pausarTempo()">⏸</button>
+      <button onclick="resetarTempo()">⟲</button>
+    </div>
+
+    <div class="times">
+      <div class="time">
+        <input id="nomeA" value="Time A">
+        <div class="gols" id="golsA">0</div>
+        <button class="add" onclick="alterarGols('A', 1)">+ Gol</button>
+        <button class="remove" onclick="alterarGols('A', -1)">- Gol</button>
+      </div>
+
+      <div class="time">
+        <input id="nomeB" value="Time B">
+        <div class="gols" id="golsB">0</div>
+        <button class="add" onclick="alterarGols('B', 1)">+ Gol</button>
+        <button class="remove" onclick="alterarGols('B', -1)">- Gol</button>
+      </div>
+    </div>
+
+    <button class="reset" onclick="resetar()">Resetar</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
