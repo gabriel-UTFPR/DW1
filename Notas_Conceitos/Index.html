@@ -11,45 +11,66 @@
 <body>
 
     <header>
-        Notas Conceito
+        <h1>Notas Conceito</h1>
+        <p>Calcule sua média de aproveitamento</p>
     </header>
 
     <main>
         <section>
-            <h1>Notas Conceito</h1>
+            <h2>Preecha os dados:</h2>
 
             <label for="inputRA" id="labelDoRA">Ra:</label>
-            <input type="text" id="inputRA"><br>
+            <input type="text" id="inputRA" placeholder="Digite seu R.A..."><br>
 
             <label for="inputNome" id="labelDoNome">Nome:</label>
-            <input type="text" id="inputNome"><br>
+            <input type="text" id="inputNome" placeholder="Digite seu nome..."><br>
 
             <label for="inputN1" id="labeldaN1">Nota 1:</label>
-            <input type="number" id="inputN1"><br>
+            <input type="number" id="inputN1" placeholder="Digite sua nota 1..."><br>
 
             <label for="inputN2" id="labeldaN2">Nota 2:</label>
-            <input type="number" id="inputN2"><br>
+            <input type="number" id="inputN2" placeholder="Digite sua nota 2..."><br>
 
             <label for="inputN3" id="labeldaN3">Nota 3:</label>
-            <input type="number" id="inputN3"><br>
+            <input type="number" id="inputN3"placeholder="Digite sua nota 3..."><br>
 
             <label for="inputN4" id="labeldaN4">Nota 4:</label>
-            <input type="number" id="inputN4"><br>
+            <input type="number" id="inputN4"placeholder="Digite sua nota 4..."><br>
 
             <label for="inputME" id="labeldoME">Média dos exercícios :</label>
-            <input type="number" id="inputME"><br>
-
+            <input type="number" id="inputME" placeholder="Digite sua media dos exercícios..."><br>
 
             <button onclick="funcaoMA()">Calcular</button>
-
-            <div class="resultado">
-                <p id="labelAluno"><strong>Informações Aluno:</strong> <span id="respAluno">-</span></p>
-                <p id="labelMA"><strong>Média de aproveitamento:</strong> <span id="respMA">0</span></p>
-                <p id="labelConceito"><strong>Conceito:</strong> <span id="respConceito">-</span></p>
-            </div>
+        </section><br>
+        <section>    
+            <table border="1">
+                <h2>Resultado:</h2>
+                <thead>
+                    <tr>
+                        <th>Aluno</th>
+                        <th>R.A.</th>
+                        <th>MA</th>
+                        <th>conceito</th>
+                        <th>Estado do aluno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="respAluno">...</td>
+                        <td id="respRA">...</td>
+                        <td id="respMA">...</td>
+                        <td id="respConceito">...</td>
+                        <td id="resEstado">...</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">...</td>
+                    </tr>
+                </tfoot>
+            </table>
         </section>
-        
-        
+         
     </main>
 
     <footer id="footer">
@@ -61,3 +82,4 @@
 </body>
 
 </html>
+
