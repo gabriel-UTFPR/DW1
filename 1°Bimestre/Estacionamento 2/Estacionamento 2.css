@@ -1,0 +1,139 @@
+/* Definição de Variáveis de Cores e Estilo */
+:root {
+    --cor-fundo: #f0f4f8;
+    --cor-branco: #ffffff;
+    --cor-azul-escuro: #1e3a8a;
+    --cor-aquamarine: #2dd4bf;
+    --cor-aquamarine-hover: #14b8a6;
+    --cor-texto: #334155;
+    --cor-erro-fundo: #ef4444;
+    --cor-erro-texto: #ffffff;
+    --borda-raio: 8px;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+header h1 {
+    color: var(--cor-azul-escuro);
+    font-size: 2rem;
+}
+
+header p {
+    color: #64748b;
+}
+
+/* Container principal */
+main {
+    width: 80%;
+    max-width: 500px;
+    background-color: var(--cor-branco);
+    padding: 2rem;
+    border-radius: var(--borda-raio);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Seção */
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: var(--cor-azul-escuro);
+}
+
+/* Inputs */
+input[type="number"] {
+    padding: 0.8rem;
+    border: 1px solid #cbd5e1;
+    border-radius: var(--borda-raio);
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+    border-color: var(--cor-aquamarine);
+}
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-bottom: 0.5rem;
+    width: 18px;
+    height: 18px;
+    accent-color: var(--cor-aquamarine);
+
+    
+}
+
+/* Botão */
+input[type="button"] {
+    margin-top: 1.5rem;
+    background-color: var(--cor-aquamarine);
+    color: var(--cor-branco);
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: var(--borda-raio);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: var(--cor-aquamarine-hover);
+}
+
+/* Resultado */
+#saida {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-azul-escuro);
+}
+
+/* Footer */
+footer {
+    margin: 2rem;
+    text-align: center;
+    color: #64748b;
+}
+.aviso {
+    display: none;
+    width: 100%;
+    background-color: var(--cor-erro-fundo);
+    color: var(--cor-erro-texto);
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}

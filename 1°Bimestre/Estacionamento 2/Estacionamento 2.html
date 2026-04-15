@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Tarifação de Estacionamento</title>
+    <script src="Estacionamento 2.js"></script>
+    <link rel="stylesheet" href="Estacionamento 2.css">
+</head>
+<body>
+    <header>
+        <h1>Estacionamento</h1>
+        <p>Calcule o valor da tarifação de Estacionamento</p>
+    </header>
+    <main>
+        <section>
+            <label for="inputHr">Check-in:</label>
+            <input type="datetime-local" name="inputin" id="inputin"><br>
+            <label for="inputHr">Check-out:</label>
+            <input type="datetime-local" name="inputout" id="inputout"><br>
+            <label for="inputTipo">Veiculo Grande?</label>
+            <input type="checkbox" name="inputTipo" id="inputTipo" value="grande">
+            <label for="inputCliente">Cliente Frequente?</label>
+            <input type="checkbox"  name="inputCliente" id="inputCliente" >
+            
+            <input type="button" value="Calcular tarifa" onclick="Calcular()">
+
+            <label for="saidahr"> Total de horas :</label>
+            <span id="saidahr"></span>
+            <label for="saidavalor">O valor total é:</label>
+            <span id="saidavalor"></span>
+        </section>
+    </main>
+    <footer>
+        <h2>Preecha os campos e calcule</h2>
+        <div id="avisoErro" class="aviso"></div>
+    </footer>
+    
+</body>
+</html>
+
