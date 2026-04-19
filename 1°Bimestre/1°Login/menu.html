@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Menu da Lanchonete</h1>
+</header>
+
+<main>
+    <section class="card">
+
+        <h2>Escolha seus produtos</h2>
+
+        <label>
+            <input type="checkbox" value="10" onchange="calcular()"> Hambúrguer (R$10)
+        </label>
+
+        <label>
+            <input type="checkbox" value="5" onchange="calcular()"> Refrigerante (R$5)
+        </label>
+
+        <label>
+            <input type="checkbox" value="7" onchange="calcular()"> Batata Frita (R$7)
+        </label>
+
+        <label>
+            <input type="checkbox" value="12" onchange="calcular()"> X-Salada (R$12)
+        </label>
+
+        <h3>Total: R$ <span id="total">0</span></h3>
+
+    </section>
+</main>
+
+<footer>
+    <p>Bom apetite 🍔</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
