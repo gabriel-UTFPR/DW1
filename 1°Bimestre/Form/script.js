@@ -51,6 +51,7 @@ function VerificarNomeA() {
     if (Atleta.length<3) {
         alert("Erro no nome do atleta");
         inputAtleta.focus();
+        inputAtleta.value="";
         return;
     }
     
@@ -58,6 +59,8 @@ function VerificarNomeA() {
     if (AtletaSplit.length<2) {
         alert("Erro: É preciso sobrenome");
         inputAtleta.focus();
+        inputAtleta.value="";
+        return
     }
 } 
 
@@ -68,7 +71,7 @@ function VerificarNomeR() {
     
     if (Responsavel.length<3) {
         alert("Erro no nome do Responsavel");
-        return inputResponsavel.value="";
+        inputResponsavel.value="";
         inputResponsavel.focus();
         return
     }
@@ -76,6 +79,7 @@ function VerificarNomeR() {
     let ResponsavelSplit= Responsavel.split(" ");
     if (ResponsavelSplit.length<2) {
         alert("Erro: É preciso sobrenome");
+        inputResponsavel.value="";
         inputResponsavel.focus();
     }
 } 
@@ -87,8 +91,9 @@ function VerificarNomeO() {
     
     if (Origem.length<4) {
         alert("Erro no nome da cidade de origem");
-        return inputOrigem.value="";
+        inputOrigem.value="";
         inputOrigem.focus();
+        return
     }
 }
 
@@ -100,19 +105,10 @@ function VerificarNomeD() {
     if (Destino.length<4) {
         alert("Erro no nome da cidade de destino");
         inputDestino.focus();
+        inputDestino.value="";
     }
 }
   
-function VerificarModalidade() {
-    
-    let inputmodalidade= document.getElementById("modalidade");
-    let modalidade= inputmodalidade.value;
-    
-    if (modalidade==="") {
-        alert("Erro na modalidade");
-        inputmodalidade.focus();
-    }
-}
 
 function VerificarIdade() {
     let inputIdade= document.getElementById("idade");

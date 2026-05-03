@@ -1,0 +1,140 @@
+/* 🔹 Seletor GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 🔹 Elemento */
+body {
+    background: linear-gradient(135deg, #f4f6f8, #dfe6e9);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Elemento */
+header {
+    width: 100%;
+    background-color: #c0392b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 🔹 Elemento */
+main {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 🔹 Classe */
+.login {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgb(246, 2, 2);
+
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    width: 400px;
+}
+
+/* 🔹 Classe */
+.divEmail,
+.divSenha {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🔹 Elemento */
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* 🔹 Elemento */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color:beige;
+}
+
+/* 🔹 Classe */
+.divBotao {
+    display: flex;
+    justify-content: center;
+}
+
+/* 🔹 Elemento */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #c0392b;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* 🔹 Elemento */
+button:hover {
+    background-color: #e74c3c;
+}
+
+/* 🔹 TABELA */
+table {
+    background: white;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+}
+
+/* 🔹 Elemento */
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+/* 🔹 Elemento */
+thead {
+    background-color: #c0392b;
+    color: white;
+}
+
+/* 🔹 Elemento */
+tfoot {
+    background-color: #ecf0f1;
+    font-weight: bold;
+}
+
+/* 🔹 ID */
+#acoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+/* 🔹 Ajuste formulário dentro da tabela */
+form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* 🔹 Inputs de quantidade */
+input[type="number"] {
+    width: 60px;
+    text-align: center;
+}

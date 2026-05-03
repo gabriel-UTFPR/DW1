@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scriptForm.js"></script>
+    <script src="script.js"></script>
+    <title>Resumo</title>
+</head>
+<body>
+    <header>Resumo do Pedido</header>
+    <main>
+        <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="3"> 
+                            Pedido de <span id="saidacliente"></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Quantidade</td>
+                        <td>Produto</td>
+                        <td>Valor</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span id="saidaX-Burguer"></span>
+                        </td>
+                        <td>X-Burguer</td>     
+                        <td>R$15,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <span id="saidaX-Salada"></span>
+                        </td>
+                        <td>X-Salada</td>     
+                        <td>R$18,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <span id="saidaRefrigerante"></span>
+                        </td>
+                        <td>Refrigerante</td>
+                        <td>R$6,00</td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <span id="saidaBatata"></span>
+                        </td>
+                        <td>Batata Frita</td>
+                        <td>R$10,00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td >Total</td>
+                        <td>
+                            <span id="saidatotal"></span>
+                        </td>
+                        <td><div id="acoes">
+                <button onclick="window.print()">imprimir</button>
+                <button onclick="window.location.href='pedido.html'">Voltar</button>
+            </div></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+    </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Pedido</title>
+</head>
+<body>
+    <header>Faça seu Pedido</header>
+    <main>
+        <form action="resumo.html" method="get">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="3"> 
+                            <label for="cliente">Nome:</label>
+                            <input type="text" name="cliente" id="cliente" placeholder="Digite seu nome" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Produto</td>
+                        <td>Valor</td>
+                        <td>Quantidade</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="X-Burguer">X-Burguer:</label>
+                        </td>     
+                        <td>R$15,00</td>
+                        <td>
+                            <input type="number" name="X-Burguer" id="X-Burguer" value="0"  min="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="X-Salada">X-Salada:</label>
+                        </td>     
+                        <td>R$18,00</td>
+                        <td>
+                            <input type="number" name="X-Salada" id="X-Salada" value="0" min="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Refrigerante">Refrigerante:</label>
+                        </td>
+                        <td>R$6,00</td>
+                        <td>
+                            <input type="number" name="Refrigerante" id="Refrigerante" min="0" value="0" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="Batata Frita">Batata Frita:</label>
+                        </td>
+                        <td>R$10,00</td>
+                        <td>
+                          <input type="number" name="Batata Frita" id="BatataFrita" min="0" value="0" required>  
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <button type="submit">Finalizar</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </main>
+</body>
+</html>
+<!--
+
+
+
+Batata Frita (10)
+
+Botão: Finalizar Pedido-->
