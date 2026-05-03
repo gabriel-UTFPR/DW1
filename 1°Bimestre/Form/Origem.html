@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Autorização para viagem</title>
+</head>
+<body>
+    <header>
+        <h1>Autorização para viagem</h1>
+    </header>
+    <main>
+        <form action="Destino.html" method="get">
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="number" id="cpf" name="cpf" onchange="VerificarCPF()" required><br>
+            </div>
+            
+            <div>
+                <label for="nomeAtleta">Nome do atleta:</label>
+                <input type="text" id="nomeAtleta" name="nomeAtleta"  onchange="VerificarNomeA()" required><br>
+            </div>
+
+            <div>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" onchange="VerificarIdade()"  required><br>
+            </div>
+
+            <div>
+                <label for="nomeResponsavel">Nome do responsável:</label>
+                <input type="text" id="nomeResponsavel" name="nomeResponsavel" onchange="VerificarNomeR()"required><br>
+            </div>
+
+            <div>
+                <label for="cidadeOrigem">Cidade de origem:</label>
+                <input type="text" id="cidadeOrigem" name="cidadeOrigem" onchange="VerificarNomeO()" required><br>
+            </div>  
+
+            <div>
+                <label for="cidadeDestino">Cidade de destino:</label>
+                <input type="text" id="cidadeDestino" name="cidadeDestino" onchange="VerificarNomeD()"required><br>
+            </div>
+
+            <div>
+                <label for="modalidade">Modalidade:</label>
+                <select name="modalidade" id="modalidade" onchange="VerificarModalidade()">
+                    <option value="">selecione</option>
+                    <option value="volei">volei</option>
+                    <option value="futsal">futsal</option>
+                    <option value="futebol">futebol</option>
+                    <option value="atletismo">atletismo</option>
+                    <option value="tenis de mesa">tenis de mesa</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>
