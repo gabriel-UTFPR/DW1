@@ -1,0 +1,79 @@
+:root{
+    --Azul:#4287f5;
+    --AzulClaro:#60a5fa;
+
+    --Fundo:#0f172a;
+    --Card:#1e293b;
+
+    --Texto:#f8fafc;
+    --Cinza:#94a3b8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--Texto);
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--Fundo);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    gap: 100px;
+    align-items: center;
+}
+
+header{
+    height: 70px;
+    width: 100%;
+}
+
+h1{
+    padding: 15px;
+}
+
+main{
+    background-color: var(--Card);
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: -5px 5px 300px var(--Azul);
+    flex: 1;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    width: 80%;
+    background-color: var(--Fundo);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+label{
+    margin: 10px;
+}
+
+button{
+
+    background-color: var(--Fundo);
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 25px;
+    cursor: pointer;
+}
+
+h2{
+    color: var(--Azul);
+    margin: 10px;
+}
